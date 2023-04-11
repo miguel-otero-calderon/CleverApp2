@@ -2,8 +2,10 @@ import { StyleSheet } from 'react-native';
 
 const HomeStyles = StyleSheet.create({
     container: {
-        flex: 1,
+        width: '100%',
+        height: '100%',
         backgroundColor: 'black',
+        alignSelf: 'center'
     },
     imageBackground: {
         width: '100%',
