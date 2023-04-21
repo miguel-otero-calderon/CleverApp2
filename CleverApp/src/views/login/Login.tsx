@@ -65,7 +65,11 @@ const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
                     if (email == '') {
                         ToastAndroid.show('Falta ingresar el correo electronico.!', ToastAndroid.SHORT);
                         return
-                    }                
+                    }    
+                    if (password == '') {
+                        ToastAndroid.show('Falta ingresar el password.!', ToastAndroid.SHORT);
+                        return
+                    }             
                     if (password == '123456') {
                         navigation.navigate('HomeScreen');
                     } else {
